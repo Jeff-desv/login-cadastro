@@ -1,0 +1,133 @@
+/*===RESET===*/
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;/*Centralizar os elementos dentro do card*/
+    width: 100%;/*Vai garantir que o card irá oculpar 100% da área*/
+    margin-top: 100px;
+}
+
+body{
+    background-color: #ffff90;
+}
+/*==FIM RESET==*/
+
+/* CARD DO FORMULÁRIO */
+.card{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4%;/*Arredondar as bordas*/
+    box-shadow: 3px 3px 1px 0px #00000060;/*Direita, Direita parte de baixo, 0 na Esquerda parte de cima, e por último a opacidade*/
+    width: 380px;
+}
+
+h1{
+    text-align: center;/*Centralizar o Texto*/
+    margin-bottom: 20px;
+    color: #0d009c;
+}
+/* FIM CARD */
+
+/* INPUTS */
+.label-float input{
+    width: 100%; /*Largura do input dentro do card*/
+    padding: 5px 5px;
+    display: inline-block; /*Para ficar fixo na linha*/
+    border: 0; /*Para Tirar as bordas do input*/
+    border-bottom: 1px solid #0d009c;/*Borda inferior*/
+    background-color: transparent;/*Para tirar a cor de fundo dos inputs*/
+    outline: none;/*Para retirar o as bordas quando clicar em um campo*/
+    min-width: 180px;
+    font-size: 16px;/*Tamanho da fonte dentro do campo digitável*/
+    transition: all .3s ease-out;/**/
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*
+Efeitos na Label
+*/
+.label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+    color: #7b77a8;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+/*Button*/
+button{
+    background-color: transparent;
+    border-color: #272262;
+    color: #272262;
+    padding: 7px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+.centralizar{/*Para Centralizar o botão*/
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: #0d009c;
+    color: #ffd;
+}
+
+/*olho*/
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #0d009c;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSucess{
+    text-align: center;
+    background-color: #aaf0aa;
+    color: #00bb00;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

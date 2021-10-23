@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+     <!--FORMULÁRIO-->
+     <div class="container">
+        <div class="card">
+            <h1>CADASTRE-SE</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+
+            <!--INPUTS-->
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Usuario</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="usuario">Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmSenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirme Senha</label>
+                <i id="verConfimSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="centralizar">
+                <button onclick='cadastrar()'>Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="./js/cadastro.js" type="text/javascript"></script>
+    
+</body>
+</html>
